@@ -27,5 +27,5 @@ RUN ls
 RUN addgroup -g 10016 choreo && \
     adduser  --disabled-password  --no-create-home --uid 10016 --ingroup choreo choreouser
 USER 10016
-EXPOSE 5000
+EXPOSE 4000
 CMD [ "flask", "run", "--host=0.0.0.0"]
